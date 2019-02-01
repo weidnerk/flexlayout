@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'flexlayout'`, () => {
+  it(`should have as title 'angular-flex-layout-demo'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('flexlayout');
+    expect(app.title).toEqual('angular-flex-layout-demo');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to flexlayout!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-flex-layout-demo!');
   });
 });
